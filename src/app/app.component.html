@@ -1,4 +1,15 @@
 <div style="text-align:center">
-  <h1>Welcome to {{ title }}</h1>
+  <h1>
+    {{ title }}!
+  </h1>
+   <img width="150" alt="Angular Logo" src="https://dailydopedose.files.wordpress.com/2013/05/logo.jpg">
 </div>
-<router-outlet></router-outlet>
+<hr>
+<div>
+  <ul>
+    <li *ngFor='let quotes of quotes'>
+      {{quotes.quote}}
+    </li>
+  </ul>
+</div>
+<app-quote></app-quote>

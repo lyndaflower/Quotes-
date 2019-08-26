@@ -1,4 +1,4 @@
-# Quotes application
+# Quotes creation
 
 #### Quote Creation is application where you can create your quote, August 6 2019
 #### By UMURERWA L.Flower

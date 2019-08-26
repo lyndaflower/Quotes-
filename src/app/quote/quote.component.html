@@ -1,11 +1,14 @@
-<div class="row">
-    <div class="col-md-6">
+<div class="container">
+    <div>
       <div *ngFor='let quotes of quotes ; let i=index'>
-        <h4>{{quotes.quote}}</h4>
-        <button (click)='toggleDetails(i)' class="btn btn-secondary">Show author </button>
+          <p>{{quotes.quote}}</p>
+          <button (click)='toggleDetails(i)' class="btn btn-outline-secondary">More details </button><br><br>
+          <app-quote-detail *ngIf='quotes.showQuote' [quotes]='quotes' (isComplete)= 'deleteQuotes($event, i)'>ttt</app-quote-detail>
+        </div>
+      <div>
+          <app-quote-form></app-quote-form>
       </div>
-      <div *ngIf='quotes.showQuote' >
-        <app-quote-detail [quotes]='quotes' (isComplete)= 'deleteQuotes($event, i)'></app-quote-detail>
-      </div>
- </div>
-</div>
+   
+    <p *ngIf = 'quotes.length > 6'></p>
+  </div>
+  </div>

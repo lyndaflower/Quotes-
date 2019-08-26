@@ -8,8 +8,8 @@
 <div>
   <ul>
     <li *ngFor='let quotes of quotes'>
-      {{quotes.quote}}
-    </li>
+      {{quotes.quote}} </li>
   </ul>
+  <p *ngIf='quotes.length'></p>
 </div>
 <app-quote></app-quote>

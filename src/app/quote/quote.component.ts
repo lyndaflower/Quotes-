@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import{Quotes}from '../quotes';
-import { $ } from 'protractor';
 
 @Component({
   selector: 'app-quote',

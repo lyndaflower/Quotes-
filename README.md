@@ -4,7 +4,8 @@
 #### By UMURERWA L.Flower
 ### Author
 https://github.com/lyndaflower
-##DESCRIPTION
+
+## Description
 Quote application  was generated with [Angular CLI](https://github.com/lyndaflower) version 8.2.2.
 ##Author
 by 

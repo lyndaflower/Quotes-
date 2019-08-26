@@ -3,5 +3,6 @@
     <li> This quote was updated after {{quotes.completeDate|dateCount}} days</li>
 </ul>
 <button (click)='quotesDelete(true)' class="btn btn-outline-danger">Delete quote</button><br><br>
-<button (click) = 'upVote'class="btn btn-outline-dark">upvote quote {{quote.like}}</button><br><br>
-<button (click)='downVote'class="btn btn-outline-dark">Downvote quote  {{quote.dislike}}</button><br><br>
+<button (click) = 'upVote'class="btn btn-outline-dark">upvote quote ({{like}})</button><br><br>
+<button (click) = 'downVote' class="btn btn-outline-dark">downvote ({{dislike}})</button>
+

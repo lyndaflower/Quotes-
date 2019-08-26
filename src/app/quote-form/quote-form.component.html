@@ -1,16 +1,16 @@
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" style="text-align: center;">
         <h1>Create your Quote</h1>
     </div>
-    <form >
+    <form #quotesForm = 'ngForm'>
         <div class="form-group">
             <label for="name">Person name</label>
-            <input type="text" required class="form-control" id="name">
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name">
         </div>
         <div class="form-group">
 
             <label for="quote">Type your QUote</label>
-            <input class="form-control" id="quote"  required >
+            <textarea class="form-control" id="quote"  required ></textarea>
   
         </div>
         <div class="form-group">

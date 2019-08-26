@@ -17,13 +17,13 @@ export class QuoteDetailComponent implements OnInit {
   quotesDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  like : 0;
-  dislike: 0;
+  vote = 0;
   upVote (){
-    this.like ++;
+    this.vote = this.vote +1;
   }
+  unvote = 0;
   downVote(){
-    this.dislike--;
+    this.unvote = this.unvote +1;
   }
   constructor() { }
 

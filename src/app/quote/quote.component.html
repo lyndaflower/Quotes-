@@ -1,14 +1,19 @@
-<div class="container">
-    <div>
+<div class="well" style="background-color: white;">
+  <img width="150" alt="Angular Logo" src="http://www.yasthoughts.com/inpsabudhabi/wp-content/uploads/2017/11/tumblr_static_quoteslogogallery1.jpg">
+  <h2>CREATION</h2>
+  <hr>
+</div>
+  <div class="container">
+    <div class="roro">
       <div *ngFor='let quotes of quotes ; let i=index'>
           <p>{{quotes.quote}}</p>
-          <button (click)='toggleDetails(i)' class="btn btn-outline-secondary">More details </button><br><br>
+          <button (click)='toggleDetails(i)' class="toggle" style="background-color:darksalmon">More details </button><br><br>
           <app-quote-detail *ngIf='quotes.showQuote' [quotes]='quotes' (isComplete)= 'deleteQuotes($event, i)'>ttt</app-quote-detail>
         </div>
+      </div>
       <div>
           <app-quote-form (addQuotes)= "addNewQuotes($event)"></app-quote-form>
       </div>
    
     <p *ngIf = 'quotes.length > 6'></p>
-  </div>
   </div>

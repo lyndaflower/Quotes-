@@ -2,7 +2,7 @@
     <li>{{quotes.author}}</li>
     <li> This quote was updated after {{quotes.completeDate|dateCount}} days</li>
 </ul>
-<button (click)='quotesDelete(true)' class="btn btn-outline-danger">Delete quote</button><br><br>
-<button (click) = 'upVote()'class="btn btn-outline-dark">upvote quote {{like}}</button><br><br>
-<button (click) = 'downVote()' class="btn btn-outline-dark">downvote quote {{dislike}}</button>
+<button (click)='quotesDelete(true)' class="delete" style="background-color: darkseagreen">Delete quote</button><br><br>
+<button (click) = 'upVote()'class="like" style="background-color: lightblue">upvote quote ({{vote}})</button><br><br>
+<button (click) = 'downVote()' class="dislike" style="background-color: rgb(56, 59, 212)">downvote quote ({{unvote}}}</button>
 

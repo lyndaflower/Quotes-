@@ -6,7 +6,7 @@
           <app-quote-detail *ngIf='quotes.showQuote' [quotes]='quotes' (isComplete)= 'deleteQuotes($event, i)'>ttt</app-quote-detail>
         </div>
       <div>
-          <app-quote-form></app-quote-form>
+          <app-quote-form (addQuotes)= "addNewQuotes($event)"></app-quote-form>
       </div>
    
     <p *ngIf = 'quotes.length > 6'></p>

@@ -1,6 +1,6 @@
 # Quotes creation
 
-#### Quote Creation is application where you can create your quote, August 6 2019
+#### Quote Creation is application where you can create your quote, August 23 2019
 #### By UMURERWA L.Flower
 ### Author
 https://github.com/lyndaflower
